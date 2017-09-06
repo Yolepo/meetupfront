@@ -1,0 +1,13 @@
+export * from './ArticleEntityApi';
+import { ArticleEntityApi } from './ArticleEntityApi';
+export * from './BasicerrorcontrollerApi';
+import { BasicerrorcontrollerApi } from './BasicerrorcontrollerApi';
+export * from './CartEntityApi';
+import { CartEntityApi } from './CartEntityApi';
+export * from './EntityMetadataServicesApi';
+import { EntityMetadataServicesApi } from './EntityMetadataServicesApi';
+export * from './ProfilecontrollerApi';
+import { ProfilecontrollerApi } from './ProfilecontrollerApi';
+export * from './RepositorycontrollerApi';
+import { RepositorycontrollerApi } from './RepositorycontrollerApi';
+export const APIS = [ArticleEntityApi, BasicerrorcontrollerApi, CartEntityApi, EntityMetadataServicesApi, ProfilecontrollerApi, RepositorycontrollerApi];

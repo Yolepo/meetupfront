@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  uriPath: 'http://localhost:8080'
 };

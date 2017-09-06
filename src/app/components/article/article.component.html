@@ -1,0 +1,34 @@
+<div class="container-fluid">
+<table class="table table-bordered">
+  <thead class="text-center">
+  <th class="text-center">
+    Nom
+  </th>
+  <th class="text-center">
+    Marque
+  </th>
+  <th class="text-center">
+    Prix
+  </th>
+  <th class="text-center col-md-2"><i class="glyphicon glyphicon-cog"></i></th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let arti of articles">
+    <td>
+      {{arti.name}}
+    </td>
+    <td>
+      {{arti.brand}}
+    </td>
+    <td class="text-right">
+      {{arti.price | number: '1.2-2'}}
+    </td>
+    <td class="text-center">
+      <button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></button>
+      <button class="btn btn-success"><i class="glyphicon glyphicon-ok"></i></button>
+      <button class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
